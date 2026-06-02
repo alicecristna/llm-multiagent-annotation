@@ -1,0 +1,21 @@
+# Environment
+.env
+
+# Data files (professor's data — not public)
+*.xlsx
+*.xls
+
+# Checkpoint files
+_checkpoint*.json
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Output directory (generated results)
+output/*.xlsx
+output/*.json
+!output/.gitkeep
