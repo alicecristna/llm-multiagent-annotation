@@ -91,7 +91,20 @@ python batch_annotate_multiagent.py --input data/sample_input.json --output outp
 | `--output` | `-o` | `output/result_*.xlsx` | 输出 Excel 路径 |
 | `--concurrency` | `-c` | Single: 5, Multi: 50 | 并发数 |
 
-### 5. Input Format
+### 5. Evaluate Results
+
+计算 Single Agent vs Multi Agent 的 F1 Score：
+
+```bash
+python evaluate.py --ground data/sample_ground_truth.json --predict output/result_single.xlsx
+python evaluate.py --ground data/sample_ground_truth.json --predict output/result_multiagent.xlsx
+```
+
+**评估字段：** `ann_related` / `ann_year` / `ann_fin_flag` / `ann_fin_info` / `third_party_flag` / `third_party_list`
+
+输出每个字段的 Precision / Recall / F1 / Accuracy，以及错误详情。
+
+### 6. Input Format
 
 输入文件为 JSON 数组，每条记录需包含 `Activity` 字段：
 
@@ -112,12 +125,14 @@ python batch_annotate_multiagent.py --input data/sample_input.json --output outp
 ├── README.md
 ├── .gitignore
 ├── data/
-│   └── sample_input.json          # 12 条 mock 示例数据
+│   ├── sample_input.json          # 12 条 mock 示例数据
+│   └── sample_ground_truth.json   # Ground truth 标注（用于 F1 计算）
 ├── prompts/
 │   ├── annotation_prompt.md       # Actor 标注 Prompt（TCREI 框架）
 │   └── critic_prompt.md           # Critic 审查 Prompt（含 5 种错误模式）
 ├── batch_annotate_single.py       # 单 Agent 异步标注脚本
 ├── batch_annotate_multiagent.py   # 多 Agent Actor→Critic→Actor 脚本
+├── evaluate.py                    # F1/Precision/Recall 评估脚本
 └── output/
     └── .gitkeep
 ```

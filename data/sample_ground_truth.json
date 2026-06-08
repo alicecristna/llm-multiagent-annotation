@@ -1,0 +1,14 @@
+[
+  {"id": 1, "ann_related": 1, "ann_year": [2019, 2020], "ann_fin_flag": 1, "ann_fin_info": [{"year": 2019, "elements": ["收入", "资产"]}, {"year": 2020, "elements": ["收入", "资产"]}], "third_party_flag": 1, "third_party_list": [{"name": "贵州茅台酒厂（集团）习酒有限责任公司", "type": "客户", "role": "配合虚构销售业务"}]},
+  {"id": 2, "ann_related": 1, "ann_year": [2021], "ann_fin_flag": 0, "ann_fin_info": null, "third_party_flag": null, "third_party_list": null},
+  {"id": 3, "ann_related": 0, "ann_year": null, "ann_fin_flag": null, "ann_fin_info": null, "third_party_flag": null, "third_party_list": null},
+  {"id": 4, "ann_related": 1, "ann_year": [2018, 2019, 2020], "ann_fin_flag": 1, "ann_fin_info": [{"year": 2018, "elements": ["费用", "负债"]}, {"year": 2019, "elements": ["费用", "负债"]}, {"year": 2020, "elements": ["费用", "负债"]}], "third_party_flag": 1, "third_party_list": [{"name": "杭州云谷科技有限公司", "type": "供应商", "role": "配合虚构采购业务并将资金回流至上市公司"}]},
+  {"id": 5, "ann_related": 1, "ann_year": [2017], "ann_fin_flag": 0, "ann_fin_info": null, "third_party_flag": null, "third_party_list": null},
+  {"id": 6, "ann_related": 0, "ann_year": null, "ann_fin_flag": null, "ann_fin_info": null, "third_party_flag": null, "third_party_list": null},
+  {"id": 7, "ann_related": 1, "ann_year": [2019, 2020, 2021], "ann_fin_flag": 1, "ann_fin_info": [{"year": 2019, "elements": ["资产", "费用", "利润"]}, {"year": 2020, "elements": ["资产", "费用", "利润"]}, {"year": 2021, "elements": ["资产", "费用", "利润"]}], "third_party_flag": 0, "third_party_list": null},
+  {"id": 8, "ann_related": 0, "ann_year": null, "ann_fin_flag": null, "ann_fin_info": null, "third_party_flag": null, "third_party_list": null},
+  {"id": 9, "ann_related": 1, "ann_year": [2016], "ann_fin_flag": 1, "ann_fin_info": [{"year": 2016, "elements": ["资产"]}], "third_party_flag": 1, "third_party_list": [{"name": "广州正德会计师事务所有限公司", "type": "中介机构", "role": "出具虚假审计报告为财务造假提供背书"}]},
+  {"id": 10, "ann_related": 0, "ann_year": null, "ann_fin_flag": null, "ann_fin_info": null, "third_party_flag": null, "third_party_list": null},
+  {"id": 11, "ann_related": 0, "ann_year": null, "ann_fin_flag": null, "ann_fin_info": null, "third_party_flag": null, "third_party_list": null},
+  {"id": 12, "ann_related": 1, "ann_year": [2017], "ann_fin_flag": 1, "ann_fin_info": [{"year": 2017, "elements": ["资产", "利润"]}], "third_party_flag": 1, "third_party_list": [{"name": "深圳市鸿达贸易有限公司", "type": "客户", "role": "配合提供虚假底层资产估值报告"}]}
+]

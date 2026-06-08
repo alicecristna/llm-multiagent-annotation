@@ -21,7 +21,7 @@ load_dotenv()
 # ═══════════════════════════════════════════════════════
 # 配置
 # ═══════════════════════════════════════════════════════
-MAX_CONCURRENT = 5            # 并发数（建议 3-8，保守起步）
+MAX_CONCURRENT = 50           #
 MAX_RETRIES = 3
 CHECKPOINT_FILE = "_checkpoint_single.json"
 ANNOTATION_COLS = [
